@@ -3,7 +3,7 @@
 This project is my first project in React JS. 
 In this particular project, i used the functions approach. 
 Similarly, there is another project , oh which, i used the class components approach.
-Class components Monsters Rolodex project -> [Link] (https://github.com/VictorBenoiston/monster-rolodex)
+<p>Class components Monsters Rolodex project -> [Link](https://github.com/VictorBenoiston/monster-rolodex)
 
 # Getting Started with Create React App
 
