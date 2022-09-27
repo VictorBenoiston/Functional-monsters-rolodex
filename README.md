@@ -2,8 +2,9 @@
 
 This project is my first project in React JS. 
 In this particular project, i used the functions approach. 
-Similarly, there is another project , oh which, i used the class components approach.
-<p>Class components Monsters Rolodex project -> [Link](https://github.com/VictorBenoiston/monster-rolodex)
+Similarly, there is another project , oh which, I used the class components approach.
+<p>Class components Monsters Rolodex project ->
+<a href='https://github.com/VictorBenoiston/monster-rolodex'>Link<a>.
 
 # Getting Started with Create React App
 

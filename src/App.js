@@ -14,7 +14,7 @@ const App = (props) => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((users) => setMonsterList(users))
-}, [])
+  }, [])
 
   useEffect(() => {
     const filteredMonsters = monsterList.filter(monster => {
@@ -24,19 +24,19 @@ const App = (props) => {
 
   }, [searchField, monsterList])
 
-const onSearchChange = (e) => {
-  const searchFieldString = e.target.value.toLowerCase()
-  setSearchField(searchFieldString)  // searchField : searchField, defined the value with the same name.
-}
-
-return (
-  <div className='App'>
-    <h1 className='title'>Monster Rolodex</h1>
-    <SearchBox onChangeFn={onSearchChange} className='monsters-search-box' placeHolder='Search Monsters'></SearchBox>
-    <CardList list={filteredMonstersList} color={'white'} />
-  </div>
-)
-
+  const onSearchChange = (e) => {
+    const searchFieldString = e.target.value.toLowerCase()
+    setSearchField(searchFieldString)  // searchField : searchField, defined the value with the same name.
   }
+
+  return (
+    <div className='App'>
+      <h1 className='title'>Monsters Rolodex</h1>
+      <SearchBox onChangeFn={onSearchChange} className='monsters-search-box' placeHolder='Search Monsters'></SearchBox><br />
+      <CardList list={filteredMonstersList} color={'white'} />
+    </div>
+  )
+
+}
 
 export default App;
