@@ -2,6 +2,7 @@ import { Component, useState, useEffect } from 'react'
 import './App.css';
 import CardList from './components/card-list/CardList'
 import SearchBox from './components/search-box/SearchBox'
+import SignIn from './components/sign-in/sign-in.component'
 
 const App = (props) => {
 
@@ -33,6 +34,7 @@ const App = (props) => {
     <div className='App'>
       <h1 className='title'>Monsters Rolodex</h1>
       <SearchBox onChangeFn={onSearchChange} className='monsters-search-box' placeHolder='Search Monsters'></SearchBox><br />
+      <SignIn/>
       <CardList list={filteredMonstersList} color={'white'} />
     </div>
   )
