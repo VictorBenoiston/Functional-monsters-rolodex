@@ -30,12 +30,15 @@ const App = (props) => {
     setSearchField(searchFieldString)  // searchField : searchField, defined the value with the same name.
   }
 
+  
+
   return (
     <div className='App'>
+      
       <h1 className='title'>Monsters Rolodex</h1>
       <SearchBox onChangeFn={onSearchChange} className='monsters-search-box' placeHolder='Search Monsters'></SearchBox><br />
-      <SignIn/>
       <CardList list={filteredMonstersList} color={'white'} />
+      
     </div>
   )
 
